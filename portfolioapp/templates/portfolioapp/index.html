@@ -11,20 +11,25 @@
 <script src="https://kit.fontawesome.com/4b3d73dc6b.js" crossorigin="anonymous"></script>
 {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/tailwind-output.css' %}"> {% endcomment %}
   <body class="flex flex-col">
-    <div class="bg-[url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-cover bg-no-repeat w-full h-[30rem]  flex  flex-col">
+    <div class="bg-[url('https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-cover bg-no-repeat w-full h-[30rem]  flex  flex-col">
       
-      
-      {% comment %} <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="relative"> {% endcomment %}
+
 
       <nav class="flex justify-end w-full">
 
-        <div class="flex justify-between gap-44 pt-10 pr-10">
+        <div class="flex justify-between gap-20 pt-10 pr-10">
       
           <div class="text-lg font-bold">
             <a id  ="nav" href="#" class="text-white text-base">Home</a>
           </div>
           <div class="text-lg font-bold">
-            <a id="nav" href="#" class="text-white text-base">About</a>
+            <a id="nav" href="#" class="text-white text-base">About me</a>
+          </div>
+          <div class="text-lg font-bold">
+            <a id="nav" href="#" class="text-white text-base">What i do</a>
+          </div>
+          <div class="text-lg font-bold">
+            <a id="nav" href="#" class="text-white text-base">Blog</a>
           </div>
           <div class="text-lg font-bold">
             <a id="nav" href="#" class="text-white text-base">Contact</a>
@@ -33,7 +38,7 @@
       
       </nav>
 
-      <div class=" hover:rotate-45 bg-center bg-cover bg-no-repeat   bg-[url('https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] w-32 h-32  rounded-full items-center self-center mt-20 mb-5 overflow-hidden "> <img src=""></div>
+      <div class=" hover:rotate-45 bg-center bg-cover bg-no-repeat   bg-[url('https://res.cloudinary.com/perecentuari/image/upload/v1677154731/IMG_20220803_182934_094_hpllku.jpg')] w-32 h-32  rounded-full items-center self-center mt-20 mb-5 overflow-hidden "> <img src=""></div>
       
       <h1 class="text-center text-white items-center self-center  text-[25px] font-bold ">HELLO, I'M GODSPOWER PERE TOIKUMO  </h1>
       <h2 class="text-center text-white items-center self-center  text-[15px] mt-5">I am a professional webdeveloper. Mainly i do web-design but lately i blow bubbles and fight crime :) </h2>
@@ -53,19 +58,11 @@
 
 
     <div class="self-center justify-self-center text-center mt-11  w-[1000] h-[200]">
-      <p class=" text-sm  ">You are an individual with a diverse set of interests and skills,
-          including biology, education, and web development. Your expertise in HTML, CSS, JavaScript,
-            Python, and Django demonstrate your proficiency in technology and your passion for innovation.
-            Your love for nature and problem-solving suggest that you are a curious and driven person who 
-            values both the natural world and finding solutions to complex challenges. Your background as both a 
-            biologist and educationist highlights your commitment to both science and sharing knowledge with others,
-          making you a unique and valuable contributor to your field.kdfjdnfkjejfkiejfjejfjeijfejfjeif
-          efierjfiejfiejhfuoejfiorguref
-          fkjrnbghjnfiierhfjiuerfioefn uoejfuoiefuiehfuirfnuirbguirhguirugf.fkjnfignrfrgujhnrefwuijerwbgnrfreuignr
-          rgoiriogreognreuigntuiejegiujgiuretg
-          errighfeiugnruigriugruieoguriegnuewhfuivhruogheuiriugnr
-          rwighruoijriwhuwhurwgiejf viehfiehjouirhiuweyurghe8ijfriotjhiotyjhigjriogjtitjgrijyb pt 
-           ]ojip jjtiouhirtjr totjiortgjh h 9jitpjh  ojgiotj iprgio
+      <p class=" text-sm  ">
+        God’spower Pere Toikumo is a versatile web developer and graphic designer who specializes in using Python, Django, Django Rest Framework, HTML, CSS, Tailwind CSS, and JavaScript for web development. 
+        In addition to his web development skills, he is also proficient in graphic design, using software such as Adobe Photoshop and Adobe Illustrator. His expertise in these areas allows him to create visually stunning web pages that are both functional and aesthetically pleasing. 
+        As a web developer, He is skilled in building dynamic and interactive web applications that meet the needs of his clients. He is also able to create engaging user experiences through his knowledge of graphic design principles. 
+        His commitment to staying up-to-date with the latest technologies and design trends in web development and graphic design enables him to provide the best possible service to his clients.
       </p>
 
     </div>
@@ -86,8 +83,13 @@
           </li>
             <li>
             <a id="s_link" href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
-          
         </li>
+        <li>
+          <a id="s_link" href="#"><i class="fa-brands fa-github"></i></a>
+      </li>
+      <li>
+        <a id="s_link" href="#"><i class="fa-brands fa-google-drive"></i></i></a>
+    </li>
       </ul>
     </div>
 
@@ -238,14 +240,25 @@
       
       <form>
         <br>
-        <input type="text" id="name" name="name" placeholder="Name"><br>
+        <input type="text" id="name" name="name" placeholder="Name" size="77"><br>
         <br>
-        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="email" id="email" name="email" placeholder="Email"  size="77" >
         <br><br>
-        <textarea placeholder> </textarea>
+        <textarea rows="5" cols="80"> </textarea>
+      </div>
+        <div id="spinButton" class=" self-center justify-self-center text-center mt-5 items-center border-2 rounded-md"><button class="p-2 w-24 text-white  text-[10px] font-bold ">SUBMIT</button></div>
       </form>
 
-    </div>
+      <div class="bg-green-800 w-full h-[5rem]  flex  flex-col mt-[80]">
+
+        <div class="self-center justify-self-center text-center w-[1000] h-[50]"></div>
+           
+      </div>
+
+   
+
+
+  
 
 
    
@@ -318,6 +331,17 @@
         overflow: hidden;
         transition: 0.5s ease-in-out;
       }
+      ul li:nth-child(6) a#s_link::before {
+        content: "\f3aa";
+        color: #8B0000;
+        border-bottom: 4px solid #8B0000;
+      }
+      ul li:nth-child(5) a#s_link::before {
+        content: "\f09b";
+        color: #00008B;
+        border-bottom: 4px solid #00008B;
+      }
+      
 
       ul li:nth-child(4) a#s_link::before {
         content: "\f08c";
