@@ -1,4 +1,6 @@
+
 {% load static %}
+
 
 <link
       rel="stylesheet"
@@ -231,20 +233,31 @@
     <div>
       <i class="fa-solid fa-phone-volume"></i>
     </div>
+    </div>
 
-
+    <div class="self-center  text-[15px] flex justify-between gap-[150px] text-white "> 
+      <div>
+        <p>R308, Eninjoku, New hall, Unilag.</p>
+    </div >
+    <div>
+      <p>Gpere800@gmail.com</p>
+    </div>
+    <div>
+      <p>+2349011833652<p/>
+    </div>
     </div>
 
 
-    <div class="self-center mt-[100] text-[20px] flex justify-between gap-[300px] text-white "> 
-      
-      <form>
+    <div class="self-center mt-[100] text-[20px] flex justify-between gap-[300px] text-black "> 
+    
+      <form method='POST'>
+        {% csrf_token %}
         <br>
         <input type="text" id="name" name="name" placeholder="Name" size="77"><br>
         <br>
         <input type="email" id="email" name="email" placeholder="Email"  size="77" >
         <br><br>
-        <textarea rows="5" cols="80"> </textarea>
+        <textarea name='message' rows="5" cols="80"> </textarea>
       </div>
         <div id="spinButton" class=" self-center justify-self-center text-center mt-5 items-center border-2 rounded-md"><button class="p-2 w-24 text-white  text-[10px] font-bold ">SUBMIT</button></div>
       </form>
