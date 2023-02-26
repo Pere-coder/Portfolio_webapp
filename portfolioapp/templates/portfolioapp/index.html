@@ -172,14 +172,14 @@
     </div>
 
 
-    <div class="self-center mt-11 text-[50px] flex justify-between gap-[80px]"> 
-      <div class="bg-red-700 w-[300] h-[300]">
+    <div class="self-center mt-11 text-[50px] flex justify-between gap-[80px] rounded-md" > 
+      <div class="bg-red-700 w-[300] h-[300] rounded-md">
     </div>
-    <div class="bg-red-700 w-[300] h-[300]">
+    <div class="bg-red-700 w-[300] h-[300] rounded-md">
     </div>
-    <div class="bg-red-700 w-[300] h-[300]">
+    <div class="bg-red-700 w-[300] h-[300] rounded-md">
     </div>
-    <div class="bg-red-700 w-[300] h-[300]">
+    <div class="bg-red-700 w-[300] h-[300] rounded-md">
     </div>
 
 
@@ -187,13 +187,13 @@
 
     
     <div class="self-center mt-11 text-[50px] flex justify-between gap-[80px]"> 
-      <div class="bg-blue-700 w-[300] h-[300]">
+      <div class="bg-blue-700 w-[300] h-[300] rounded-md">
     </div>
-    <div class="bg-blue-700 w-[300] h-[300]">
+    <div class="bg-blue-700 w-[300] h-[300] rounded-md">
     </div>
-    <div class="bg-blue-700 w-[300] h-[300]">
+    <div class="bg-blue-700 w-[300] h-[300] rounded-md">
     </div>
-    <div class="bg-blue-700 w-[300] h-[300]">
+    <div class="bg-blue-700 w-[300] h-[300] rounded-md">
     </div>
 
 
@@ -226,16 +226,18 @@
     <div class="self-center mt-[100] text-[20px] flex justify-between gap-[300px] text-white "> 
       <div>
         <i class="fa-solid fa-location-dot"></i>
+        <p class="text-white font-bold text-[10px] mt-5 w-[50] h-[5]">R308, Eninjoku, New hall, Unilag. </p>
     </div>
     <div>
       <i class="fa-solid fa-envelope"></i>
+      <p class="text-white font-bold text-[10px] mt-5 w-[50] h-[5]">Gpere800@gmail.com </p>
     </div>
     <div>
       <i class="fa-solid fa-phone-volume"></i>
     </div>
     </div>
 
-    <div class="self-center  text-[15px] flex justify-between gap-[150px] text-white "> 
+    {% comment %} <div class="self-center  text-[15px] flex justify-between gap-[150px] text-white "> 
       <div>
         <p>R308, Eninjoku, New hall, Unilag.</p>
     </div >
@@ -245,22 +247,28 @@
     <div>
       <p>+2349011833652<p/>
     </div>
-    </div>
+    </div> {% endcomment %}
 
-
-    <div class="self-center mt-[100] text-[20px] flex justify-between gap-[300px] text-black "> 
-    
+   
+    <div class="self-center mt-[100] text-[20px] flex justify-between gap-[300px] text-white "> 
+   
       <form method='POST'>
+        
         {% csrf_token %}
         <br>
-        <input type="text" id="name" name="name" placeholder="Name" size="77"><br>
+        <input type="text" id="name" name="name" placeholder="Name" size="80" class="rounded-md w-full   bg-green-700 outline-none"><br>
         <br>
-        <input type="email" id="email" name="email" placeholder="Email"  size="77" >
+        <input type="email" id="email" name="email" placeholder="Email"  size="80" class="rounded-md w-full   bg-green-700 outline-none">
         <br><br>
-        <textarea name='message' rows="5" cols="80"> </textarea>
-      </div>
+        <textarea name='message' rows="5" cols="80" class="rounded-md w-full  bg-green-700 outline-none"> </textarea>
+        
+      </div> 
+      {% for message in messages %}
+      <div class="self-center mt-[10] text-[20px] flex justify-between gap-[300px] text-black "> {{message}}</div>
+      {% endfor %}
         <div id="spinButton" class=" self-center justify-self-center text-center mt-5 items-center border-2 rounded-md"><button class="p-2 w-24 text-white  text-[10px] font-bold ">SUBMIT</button></div>
       </form>
+      
 
       <div class="bg-green-800 w-full h-[5rem]  flex  flex-col mt-[80]">
 
