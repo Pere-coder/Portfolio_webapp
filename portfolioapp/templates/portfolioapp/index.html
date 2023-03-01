@@ -75,19 +75,19 @@
     <div class="self-center justify-self-center text-center mt-0" >
       <ul>
           <li>
-            <a id="s_link" href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+            <a id="s_link" href="https://twitter.com/PereProxima"><i class="fa-brands fa-twitter twitter"></i></a>
             </li>
           <li>
-            <a id="s_link"  href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+            <a id="s_link"  href="https://wa.me/+2349011833652"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
             </li>
           <li>
-            <a id="s_link" href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+            <a id="s_link" href="https://www.instagram.com/pereproxima/"><i class="fa-brands fa-instagram instagram"></i></a>
           </li>
             <li>
-            <a id="s_link" href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            <a id="s_link" href="https://www.linkedin.com/in/godspower-toikumo-07b029238/"><i class="fa-brands fa-linkedin linkedin"></i></a>
         </li>
         <li>
-          <a id="s_link" href="#"><i class="fa-brands fa-github"></i></a>
+          <a id="s_link" href="https://github.com/Pere-coder"><i class="fa-brands fa-github"></i></a>
       </li>
       <li>
         <a id="s_link" href="#"><i class="fa-brands fa-google-drive"></i></i></a>
@@ -146,19 +146,19 @@
 
 
     <div class="self-center mt-11 text-[50px] flex justify-between gap-[50px]"> 
-      <div class=" w-[100] h-8 border-2 rounded-md border-red-500">
+      <div id="spinButton" class=" border-2 rounded-md border-red-700"><button onclick="buttonColor()"  id="button" class="p-2 w-24 text-red-700  text-[10px] font-bold ">Software development</button>
     </div>
     
-      <div class=" w-[100] h-8 border-2 rounded-md border-red-500"> 
+    <div id="spinButton" class=" border-2 rounded-md border-red-700"><button class="p-2 w-24 text-red-700  text-[10px] font-bold ">Web design & development</button>
     </div>
     
-      <div class=" w-[100] h-8 border-2 rounded-md border-red-500"> 
+    <div id="spinButton" class=" border-2 rounded-md border-red-700"><button class="p-2 w-24 text-red-700  text-[10px] font-bold ">Graphic design</button>
     </div>
   
-      <div class=" w-[100] h-8 border-2 rounded-md border-red-500"> 
+    <div id="spinButton" class=" border-2 rounded-md border-red-700"><button class="p-2 w-24 text-red-700  text-[10px] font-bold ">Biologist</button> 
     </div>
     
-      <div class=" w-[100] h-8 border-2 rounded-md border-red-500"> 
+    <div id="spinButton" class=" border-2 rounded-md border-red-700"><button class="p-2 w-24 text-red-700  text-[10px] font-bold ">Educationist</button>
     </div>
     </div>
 
@@ -195,7 +195,17 @@
     <div class="bg-gray-300 w-full h-[30rem]  flex  flex-col mt-[100]">
       <h3 class="text-black font-bold text-[25px] self-center justify-self-center text-center mt-11">About Me</h3>
 
-      <div class="self-center justify-self-center text-center w-[1000] h-[200]"></div>
+      <div class="self-center justify-self-center text-center w-[1000] h-[500] mt-11">
+        <p>
+
+          Godspower Pere Toikumo is a Biologist, graphic designer, and python developer focusing on web development using Django, with experience in Adobe Photoshop, Adobe Illustrator, python, and also in teaching High school biology. Godspower is fueled by his passion for understanding how graphics can be used to create a powerful impression and communicate a design to people, Programming and how it can be used to solve real problems, biology and how It can be applied to creating a better environment for living organisms. He considers himself a ‘forever student', eager to both solve problems with his skills and also stay in tune by constantly updating his skill set through continued study and course work.
+
+          Godspower’s hunger for knowledge and determination to turn information into action has contributed to his success in being able to successfully managing projects ranging from graphic design to web development using python. He is passionate about rendering services and helping out in any way he can, willing to understand and adapt to solve an existing problem.
+
+          Godspower is willing to face new challenges and is an adept problem solver, he is a great team worker but can also manage projects alone, with little or no supervision. Godpower is currently working as a freelance graphic designer and web developer and is always interested in a challenge.
+
+       </p>
+    </div>
          
     </div>
 
@@ -269,7 +279,7 @@
         
       </div> 
       {% for message in messages %}
-      <div class="self-center mt-[10] text-[20px] flex justify-between gap-[300px] text-black "> {{message}}</div>
+      <div class="self-center mt-[10] text-[20px] flex justify-between gap-[300px] text-white  "><h1> {{message}}</h1></div>
       {% endfor %}
         <div id="spinButton" class=" self-center justify-self-center text-center mt-5 items-center border-2 rounded-md"><button class="p-2 w-24 text-white  text-[10px] font-bold ">SUBMIT</button></div>
       </form>
@@ -323,6 +333,12 @@
 
 
     <style>
+
+
+      function buttonColor(){
+        document.getElementById("button").style.backgroundColor = "#FF0000";
+      }
+
 
 
 

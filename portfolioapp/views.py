@@ -10,7 +10,7 @@ def viewpage(request):
         message = request.POST.get('message')
        
         new_message = contact(name=name, email=email, message=message)
-        messages.success(request, f'Dear {name} your message has been submitted succesfully.')
+        messages.success(request, f'Dear {name} your message has been submitted succesfully !')
         new_message.save()
         
         
