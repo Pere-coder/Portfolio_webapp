@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import photos, contact
 from django.contrib import messages
 
@@ -13,5 +13,12 @@ def viewpage(request):
         messages.success(request, f'Dear {name} your message has been submitted succesfully !')
         new_message.save()
         
+        return redirect('viewpage')
+        
         
     return render(request, 'portfolioapp/index.html')
+
+
+def workpage(request):
+    pass
+    return render(request, 'portfolioapp/works.html')
